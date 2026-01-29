@@ -1,0 +1,37 @@
+# analysis_options.yaml
+# Konfigurasi analyzer & lint untuk Flutter & Dart
+# Aman untuk pemula tapi tetap menjaga kualitas kode
+
+# Gunakan lint resmi Flutter terbaru
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # -------------------------
+    # Aturan dasar Flutter/Dart
+    # -------------------------
+    avoid_print: false          # izinkan sementara penggunaan print
+    prefer_single_quotes: true  # gunakan tanda kutip tunggal
+    always_put_control_body_on_new_line: true
+    always_specify_types: true
+    annotate_overrides: true
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    lines_longer_than_80_chars: false  # bisa diatur sesuai preferensi
+
+    # -------------------------
+    # Aturan tambahan berguna
+    # -------------------------
+    prefer_final_fields: true
+    prefer_final_locals: true
+    unnecessary_this: true
+    prefer_typing_uninitialized_variables: true
+    avoid_unused_constructor_parameters: true
+
+    # -------------------------
+    # Aturan opsional untuk kerapihan
+    # -------------------------
+    curly_braces_in_flow_control_structures: true
+    no_duplicate_case_values: true
+    avoid_bool_literals_in_conditional_expressions: true
+    always_use_package_imports: false
